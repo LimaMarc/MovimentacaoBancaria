@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Questao5</name>
+    </assembly>
+    <members>
+        <member name="P:Questao5.Application.Arguments.Request.MovimentoCreate.TipoMovimento">
+            <summary>
+            Tipo Movimento 
+            </summary>
+            <example>(C=Crédito | D=Débito)</example>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Request.MovimentoCreate.Valor">
+            <summary>
+            Valor da movimentação
+            </summary>
+            <example>1500.48</example>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Request.MovimentoCreate.IdContaCorrente">
+            <summary>
+            Identificador Conta Corrente
+            </summary>
+            <example>2ae83eb7-2391-4a83-8c15-a7076b08ea08</example>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Response.ContaCorrenteGetResponse.Numero">
+            <summary>
+            Numero Conta
+            </summary>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Response.ContaCorrenteGetResponse.Nome">
+            <summary>
+            Dados do correntista
+            </summary>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Response.ContaCorrenteGetResponse.Valor">
+            <summary>
+            Saldo atual Créditos - Débitos
+            </summary>
+        </member>
+        <member name="P:Questao5.Application.Arguments.Response.ContaCorrenteGetResponse.Data">
+            <summary>
+            Data consulta
+            </summary>
+        </member>
+        <member name="M:Questao5.Controllers.MovimentacaoController.Get(System.Guid)">
+            <summary>
+            Realiza a consulta de conta bancária retornado o saldo atual
+            </summary>
+            <param name="idContaCorrente"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Questao5.Controllers.MovimentacaoController.Post(Questao5.Application.Arguments.Request.MovimentoCreate)">
+            <summary>
+            Realiza movimentação de crédito ou débito na conta bancária
+            </summary>
+            <param name="Movimento"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Questao5.Migrations.EstruturaInicialBaseDados">
+            <inheritdoc />
+        </member>
+        <member name="M:Questao5.Migrations.EstruturaInicialBaseDados.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Questao5.Migrations.EstruturaInicialBaseDados.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Questao5.Migrations.EstruturaInicialBaseDados.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
